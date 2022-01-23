@@ -1,0 +1,234 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/**
+ *   Halaman Filter
+*/
+
+.dark-layout .filter-application .content-area-wrapper .filter-app-list .app-action {
+    border-color: #3b4253;
+    background-color: #283046;
+}
+
+.dark-layout .filter-application .content-area-wrapper .filter-app-list .app-action .action-right .list-inline-item .dropdown-toggle {
+    color: #b4b7bd;
+}
+
+.dark-layout .filter-application .content-area-wrapper .sidebar .filter-form .filter-item-action {
+    color: #b4b7bd;
+}
+
+.dark-layout .filter-application .content-area-wrapper .content-right .filter-task-list-wrapper {
+    background-color: #283046 !important;
+    border-color: #3b4253;
+}
+
+.dark-layout .filter-application .content-area-wrapper .content-right .filter-task-list .filter-item:not(:first-child) {
+    border-color: #3b4253;
+}
+
+.dark-layout .filter-application .content-area-wrapper .content-right .filter-task-list .filter-item.completed .filter-title {
+    color: #676d7d;
+}
+
+.dark-layout .filter-application .content-area-wrapper .content-right .filter-task-list .filter-item:hover {
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.24);
+}
+
+.dark-layout .filter-application .content-area-wrapper .content-right .filter-task-list .filter-item .filter-item-action .filter-item-favorite:not(.text-warning) i,
+.dark-layout .filter-application .content-area-wrapper .content-right .filter-task-list .filter-item .filter-item-action .filter-item-favorite:not(.text-warning) svg {
+    color: #b4b7bd;
+}
+
+.dark-layout .filter-application .filter-item-action .close {
+    background-color: transparent !important;
+}
+
+.dark-layout .filter-item.gu-mirror {
+    background-color: #283046;
+    border-color: #3b4253;
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.24);
+}
+
+.dark-layout .filter-item.gu-mirror.completed .filter-title {
+    color: #676d7d;
+}
+
+
+/*
+    Menu Button
+*/
+
+.menu-pop {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 1vw;
+    bottom: 1vh;
+    z-index: 9;
+}
+
+.menu {
+    position: relative;
+    margin-top: .5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    right: 3vw;
+    bottom: 15.5vh;
+}
+
+.menu-select:hover {
+    transform: translateY(-5px);
+    transition: .5s;
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.menu li {
+    position: absolute;
+    list-style: none;
+    left: 0;
+    transform-origin: 6rem;
+    transition: .5s;
+    transition-delay: calc(.1s * var(--i));
+    transform: rotate(0deg);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.menu.active li {
+    left: -4.5rem;
+    transform: rotate(calc(180deg / 3 * var(--i)));
+    -webkit-transform: rotate(calc(180deg / 3 * var(--i)));
+    -moz-transform: rotate(calc(180deg / 3 * var(--i)));
+    -ms-transform: rotate(calc(180deg / 3 * var(--i)));
+    -o-transform: rotate(calc(180deg / 3 * var(--i)));
+}
+
+.menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(calc(180deg / -3 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+    color: #111;
+    transition: .5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: rotate(calc(180deg / -3 * var(--i)));
+    -moz-transform: rotate(calc(180deg / -3 * var(--i)));
+    -ms-transform: rotate(calc(180deg / -3 * var(--i)));
+    -o-transform: rotate(calc(180deg / -3 * var(--i)));
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.menu li a:hover {
+    transform: rotate(calc(420deg / 3 * var(--r)));
+    background: #7367F0;
+    color: #fff;
+    -webkit-transform: rotate(calc(420deg / 3 * var(--r)));
+    -moz-transform: rotate(calc(420deg / 3 * var(--r)));
+    -ms-transform: rotate(calc(420deg / 3 * var(--r)));
+    -o-transform: rotate(calc(420deg / 3 * var(--r)));
+}
+
+.toggle {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+    font-size: 3em;
+    transition: transform 1.24s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: transform 1.24s;
+    -moz-transition: transform 1.24s;
+    -ms-transition: transform 1.24s;
+    -o-transition: transform 1.24s;
+}
+
+.menu-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    cursor: pointer;
+}
+
+.menu-overlay.show {
+    display: block;
+}
+
+.menu.active .toggle {
+    transform: rotate(325deg);
+    -webkit-transform: rotate(325deg);
+    -moz-transform: rotate(325deg);
+    -ms-transform: rotate(325deg);
+    -o-transform: rotate(325deg);
+}
+
+@media (max-width: 576px) {
+    .menu {
+        bottom: 8vh;
+        right: 7vw;
+    }
+
+    .menu li a {
+        transform: rotate(calc(150deg / -3 * var(--i)));
+    }
+
+    .menu.active li {
+        transform: rotate(calc(150deg / 3 * var(--i)));
+    }
+}
